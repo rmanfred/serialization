@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.13" class="java.beans.XMLDecoder">
+ <object class="io.adelina.serialization.json.UserProfile">
+  <void property="age">
+   <int>23</int>
+  </void>
+  <void property="developer">
+   <boolean>true</boolean>
+  </void>
+  <void property="email">
+   <string>dzhalelova@mail.com</string>
+  </void>
+  <void property="friends">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <string>Irina</string>
+    </void>
+    <void method="add">
+     <string>Sasha</string>
+    </void>
+    <void method="add">
+     <string>Sergey</string>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>Adelina</string>
+  </void>
+  <void property="relatives">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <string>Asya</string>
+     <int>49</int>
+    </void>
+    <void method="put">
+     <string>Farkhat</string>
+     <int>27</int>
+    </void>
+    <void method="put">
+     <string>Ruslan</string>
+     <int>54</int>
+    </void>
+   </object>
+  </void>
+  <void property="salary">
+   <float>120000.45</float>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,39 @@
+plugins {
+    id "com.google.protobuf" version "0.8.18"
+    id "java"
+    id "application"
+}
+
+group 'adelina.example'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'org.apache.avro:avro:1.11.0'
+    implementation 'org.apache.avro:avro-compiler:1.11.0'
+    implementation 'org.apache.avro:avro-maven-plugin:1.11.0'
+    implementation group: 'org.apache.avro', name: 'avro-tools', version: '1.11.0'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.30'
+    implementation group: 'org.msgpack', name: 'msgpack-core', version: '0.9.0'
+}
+
+ext {
+    javaMainClass = "io.adelina.serialization.json.Main"
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'io.adelina.serialization.json.Main'
+        )
+    }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "MyClass",
+  "type": "record",
+  "namespace": "com.acme.avro",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "email",
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "type": "int"
+    },
+    {
+      "name": "isDeveloper",
+      "type": "boolean"
+    },
+    {
+      "name": "salary",
+      "type": "float"
+    },
+    {
+      "name": "friends",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "relatives",
+      "type": {
+        "name": "relatives",
+        "type": "record",
+        "fields": [
+          {
+            "name": "Asya",
+            "type": "int"
+          },
+          {
+            "name": "Farkhat",
+            "type": "int"
+          },
+          {
+            "name": "Ruslan",
+            "type": "int"
+          }
+        ]
+      }
+    }
+  ]
+}

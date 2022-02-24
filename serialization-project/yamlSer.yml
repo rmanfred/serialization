@@ -1,0 +1,8 @@
+!!io.adelina.serialization.json.UserProfile
+age: 23
+developer: true
+email: dzhalelova@mail.com
+friends: [Irina, Sasha, Sergey]
+name: Adelina
+relatives: {Asya: 49, Farkhat: 27, Ruslan: 54}
+salary: 120000.45
